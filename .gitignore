@@ -1,0 +1,9 @@
+node_modules/
+out/
+release/
+dist/
+*.log
+.env
+# binários grandes baixados por "npm run setup" (o LocalSend-CLI.exe fica versionado)
+resources/bin/yt-dlp.exe
+resources/bin/ffmpeg.exe

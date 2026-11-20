@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Rodar em desenvolvimento", "type": "npm", "script": "dev", "problemMatcher": [] },
+    { "label": "Gerar instalador .exe", "type": "npm", "script": "dist", "problemMatcher": [], "group": "build" },
+    { "label": "Publicar release no GitHub", "type": "npm", "script": "release", "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "version": "1.0.2",
+    "date": "2026-11-20",
+    "title": "Mesa de Som ao vivo",
+    "items": [
+      "Nova Mesa de Som em tempo real para o telão: graves, médios (voz), agudos, boost de volume até 250%, limpar ruído/chiado e nivelador.",
+      "Botões de 1 clique: Normal, Tirar Abafado, Som Muito Baixo e Música/Louvor.",
+      "A mesa só aparece enquanto há vídeo no telão e volta ao padrão sozinha quando o vídeo termina, o telão fecha ou o arquivo troca."
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "date": "2026-11-19",
+    "title": "Correções e melhorias",
+    "items": [
+      "Informativo Mundial das Missões: agora só aparecem vídeos públicos e já publicados (sem vídeos de membros, premium ou estreias agendadas).",
+      "Downloads em 4K (2160p), 2K e 8K quando o vídeo oferecer.",
+      "Player do telão: a seta direita avança e a esquerda volta 10 s; o mouse não pausa mais (só a barra de espaço); mostra o ícone do programa e fecha sozinho quando o vídeo termina.",
+      "Temas agora vêm embutidos no programa, sem criar pasta no computador.",
+      "LocalSend corrigido: as janelas de enviar e receber voltam a abrir.",
+      "Avisos não se repetem mais em sequência.",
+      "Prévia ao passar o mouse refeita para funcionar de forma confiável.",
+      "Data e hora com segundos."
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-11-18",
+    "title": "Primeira versão do SonoplastiaPro - IASD",
+    "items": [
+      "Visual novo.",
+      "Vídeos do Provai e Vede e do Informativo Mundial das Missões atualizados em tempo real, com selo NOVO.",
+      "Miniaturas, prévia ao passar o mouse e botão Baixar logo abaixo de cada vídeo.",
+      "Pesquisa estilo YouTube com sugestões e busca por voz.",
+      "Avisos de download e de erro em balões com som.",
+      "Reprodução da biblioteca direto no telão, LocalSend e Modo Leve para PCs fracos.",
+      "Atualizações automática."
+    ]
+  }
+]

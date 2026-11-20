@@ -1,0 +1,18 @@
+/* Tema "Cyber" — neon verde-água com fundo escuro futurista. */
+:root:root:root {
+  --background: 180 40% 5%;
+  --card: 180 35% 9%;
+  --popover: 180 38% 8%;
+  --muted: 180 25% 14%;
+  --secondary: 180 22% 17%;
+  --accent: 180 28% 15%;
+  --border: 180 25% 20%;
+  --input: 180 40% 6%;
+  --primary: 165 100% 45%;
+  --ring: 165 100% 50%;
+  --grad-from: 160 100% 42%;
+  --grad-to: 190 90% 50%;
+  --glass: 180 32% 11%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(165 90% 35% / 0.4), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(190 80% 30% / 0.3), transparent 70%), hsl(180 45% 3%);
+}

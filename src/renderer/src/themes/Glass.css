@@ -1,0 +1,19 @@
+/* Tema "Glass" — clean, quase transparente, efeito vidro. */
+:root:root:root {
+  --background: 220 20% 8%;
+  --card: 220 18% 12% / 0.55;
+  --popover: 220 18% 10% / 0.7;
+  --muted: 220 14% 18% / 0.6;
+  --secondary: 220 12% 22% / 0.5;
+  --accent: 220 16% 20% / 0.45;
+  --border: 220 20% 40% / 0.25;
+  --input: 220 20% 10% / 0.4;
+  --primary: 210 100% 65%;
+  --ring: 210 100% 70%;
+  --grad-from: 210 90% 60%;
+  --grad-to: 190 80% 55%;
+  --glass: 220 20% 15% / 0.35;
+  --app-bg: radial-gradient(1000px 600px at 10% -10%, hsl(210 80% 50% / 0.15), transparent 65%),
+    radial-gradient(800px 500px at 100% 0%, hsl(190 70% 45% / 0.1), transparent 60%),
+    hsl(220 25% 6% / 0.85);
+}

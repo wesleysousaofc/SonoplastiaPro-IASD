@@ -1,0 +1,18 @@
+/* Tema "Sunset" — laranja quente com toques de rosa e dourado. */
+:root:root:root {
+  --background: 20 45% 7%;
+  --card: 18 40% 11%;
+  --popover: 20 42% 9%;
+  --muted: 18 30% 16%;
+  --secondary: 18 28% 20%;
+  --accent: 18 32% 18%;
+  --border: 18 25% 22%;
+  --input: 20 45% 8%;
+  --primary: 25 95% 55%;
+  --ring: 25 95% 60%;
+  --grad-from: 30 100% 55%;
+  --grad-to: 350 80% 55%;
+  --glass: 18 38% 12%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(25 90% 45% / 0.4), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(340 70% 40% / 0.28), transparent 70%), hsl(18 50% 5%);
+}

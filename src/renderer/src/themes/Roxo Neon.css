@@ -1,0 +1,19 @@
+/* Tema "Roxo Neon" — para quem gosta de cor forte. */
+:root:root:root {
+  --radius: 1.3rem;
+  --background: 262 40% 7%;
+  --card: 262 34% 12%;
+  --popover: 262 36% 10%;
+  --muted: 262 26% 17%;
+  --secondary: 262 24% 23%;
+  --accent: 262 26% 20%;
+  --border: 262 24% 24%;
+  --input: 262 42% 8%;
+  --primary: 280 90% 62%;
+  --ring: 280 90% 66%;
+  --grad-from: 262 90% 58%;
+  --grad-to: 320 85% 60%;
+  --glass: 262 36% 12%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(262 90% 45% / 0.4), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(320 80% 45% / 0.28), transparent 70%), hsl(262 45% 5%);
+}

@@ -1,0 +1,19 @@
+/* Tema "Clean" — minimal, quase transparente, fundo muito claro/neutro. Ideal para glassmorphism. */
+:root:root:root {
+  --background: 220 15% 10%;
+  --card: 220 12% 14% / 0.4;
+  --popover: 220 14% 12% / 0.55;
+  --muted: 220 10% 20% / 0.5;
+  --secondary: 220 10% 24% / 0.4;
+  --accent: 220 12% 22% / 0.35;
+  --border: 220 15% 50% / 0.18;
+  --input: 220 15% 12% / 0.3;
+  --primary: 215 90% 60%;
+  --ring: 215 90% 65%;
+  --grad-from: 215 80% 55%;
+  --grad-to: 200 70% 50%;
+  --glass: 220 12% 16% / 0.3;
+  --app-bg: radial-gradient(1000px 600px at 15% -15%, hsl(215 60% 45% / 0.12), transparent 60%),
+    radial-gradient(800px 500px at 95% 5%, hsl(200 50% 40% / 0.08), transparent 55%),
+    hsl(220 20% 7% / 0.9);
+}

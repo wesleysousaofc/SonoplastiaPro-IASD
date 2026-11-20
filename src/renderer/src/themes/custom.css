@@ -1,0 +1,27 @@
+/* ==========================================================================
+   custom.css  -  SEMPRE carregado por ultimo. Seu espaco livre para mexer no visual.
+   Salvou o arquivo? O programa atualiza na hora (sem reiniciar).
+
+   COMO USAR: copie um exemplo para FORA deste comentario e altere os valores.
+   Dica: comece com ":root:root:root" para vencer qualquer tema.
+   Cores sao HSL sem escrever hsl():  matiz  saturacao%  luminosidade%
+
+   EXEMPLO 1 - cantos mais redondos e botoes roxos:
+
+       :root:root:root {
+         --radius: 1.4rem;
+         --grad-from: 262 83% 58%;
+         --grad-to: 316 80% 60%;
+         --primary: 262 83% 62%;
+       }
+
+   EXEMPLO 2 - selo NOVO vermelho:
+
+       .spa-badge-new { background: #ff4d4d !important; }
+
+   GANCHOS DE CLASSE (para mexer em partes especificas):
+       .spa-titlebar  .spa-sidebar  .spa-statusbar  .spa-search
+       .spa-video-card  .spa-badge-new  .spa-card  .spa-dialog  .spa-toast  .spa-btn
+
+   Emojis: o programa usa os emojis coloridos do Windows (Segoe UI Emoji).
+   ========================================================================== */

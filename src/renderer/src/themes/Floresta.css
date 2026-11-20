@@ -1,0 +1,18 @@
+/* Tema "Floresta" — verdes profundos com destaque esmeralda. */
+:root:root:root {
+  --background: 150 35% 6%;
+  --card: 150 30% 10%;
+  --popover: 150 32% 9%;
+  --muted: 150 22% 15%;
+  --secondary: 150 20% 18%;
+  --accent: 150 25% 16%;
+  --border: 150 20% 20%;
+  --input: 150 35% 7%;
+  --primary: 145 70% 45%;
+  --ring: 145 75% 50%;
+  --grad-from: 140 80% 40%;
+  --grad-to: 160 70% 48%;
+  --glass: 150 28% 12%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(145 70% 35% / 0.35), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(160 60% 30% / 0.25), transparent 70%), hsl(150 40% 4%);
+}

@@ -1,0 +1,18 @@
+/* Tema "Oceano" — azul profundo com destaque turquesa. Copie e altere à vontade. */
+:root:root:root {
+  --background: 215 50% 7%;
+  --card: 215 42% 12%;
+  --popover: 215 44% 10%;
+  --muted: 215 34% 17%;
+  --secondary: 215 32% 22%;
+  --accent: 215 34% 20%;
+  --border: 215 30% 23%;
+  --input: 215 50% 8%;
+  --primary: 190 90% 46%;
+  --ring: 190 90% 52%;
+  --grad-from: 200 95% 45%;
+  --grad-to: 170 80% 52%;
+  --glass: 215 45% 12%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(205 90% 42% / 0.4), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(170 80% 38% / 0.28), transparent 70%), hsl(215 55% 5%);
+}

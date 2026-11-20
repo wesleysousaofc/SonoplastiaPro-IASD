@@ -1,0 +1,30 @@
+PASTA DE TEMAS DO PROGRAMA (embutidos no instalador e no portatil)
+===================================================================
+
+Para ADICIONAR um tema:
+  1. Coloque aqui o arquivo .css  (ex.: tema-azul.css)
+  2. Rode o programa (2-ABRIR-DEV.bat) ou gere o instalador (3-GERAR-EXE.bat)
+  3. O tema aparece sozinho em  Configuracoes > Aparencia > Tema
+
+Para REMOVER um tema: apague o arquivo .css daqui.
+
+Nome que aparece na lista:
+  - Por padrao e o nome do arquivo (tema-azul.css -> "Tema Azul")
+  - Para escolher outro, escreva na primeira linha do .css:   /* nome: Azul Celeste */
+
+Modelo de tema (copie para um arquivo .css novo e mude os valores):
+
+  :root:root:root {
+    --background: 215 50% 7%;
+    --foreground: 214 32% 94%;
+    --card: 215 42% 12%;
+    --muted: 215 34% 17%;
+    --border: 215 30% 23%;
+    --primary: 190 90% 46%;
+    --grad-from: 200 95% 45%;
+    --grad-to: 170 80% 52%;
+    --radius: 1.1rem;
+  }
+
+Cores em HSL, sem escrever hsl():   matiz  saturacao%  luminosidade%
+IMPORTANTE: este arquivo (.txt) nao e carregado; so os .css.

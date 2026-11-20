@@ -1,0 +1,18 @@
+/* Tema "Café" — tons quentes de marrom e creme. */
+:root:root:root {
+  --background: 30 25% 8%;
+  --card: 30 22% 12%;
+  --popover: 30 24% 10%;
+  --muted: 30 18% 17%;
+  --secondary: 30 16% 20%;
+  --accent: 30 20% 18%;
+  --border: 30 15% 22%;
+  --input: 30 25% 9%;
+  --primary: 35 70% 55%;
+  --ring: 35 75% 60%;
+  --grad-from: 35 80% 50%;
+  --grad-to: 20 60% 45%;
+  --glass: 30 20% 13%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(35 60% 35% / 0.35), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(20 50% 28% / 0.25), transparent 70%), hsl(30 30% 5%);
+}

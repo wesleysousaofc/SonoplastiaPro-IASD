@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================================
+   TEMA PADRÃO "IASD Escuro".
+   Todo o visual vem destas variáveis. Para criar seu tema, copie um dos arquivos
+   da pasta de temas (Configurações → Aparência → Abrir pasta de temas) e mude os valores.
+   Cores em HSL: "matiz saturação% luminosidade%".
+   ===================================================================== */
+@layer base {
+  :root {
+    --font-ui: 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+    --font-emoji: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji';
+    --radius: 1.1rem;
+
+    --background: 222 32% 7%;
+    --foreground: 214 32% 94%;
+    --card: 222 28% 12%;
+    --card-foreground: 214 32% 94%;
+    --popover: 222 30% 11%;
+    --popover-foreground: 214 32% 94%;
+    --muted: 222 22% 16%;
+    --muted-foreground: 218 14% 64%;
+    --border: 222 20% 21%;
+    --input: 222 30% 9%;
+    --ring: 160 72% 48%;
+    --primary: 160 72% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 20% 21%;
+    --secondary-foreground: 214 32% 92%;
+    --accent: 222 22% 19%;
+    --accent-foreground: 214 32% 96%;
+    --destructive: 0 78% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 70% 50%;
+    --warning: 38 92% 56%;
+
+    /* degradê dos botões principais (como o "Download" verde da referência) */
+    --grad-from: 168 76% 40%;
+    --grad-to: 142 70% 54%;
+
+    /* vidro (efeito blur do IDM) */
+    --glass: 222 28% 12%;
+    --glass-alpha: 0.68;
+    --glass-border: 0 0% 100% / 0.08;
+    --blur: 22px;
+
+    --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(218 80% 38% / 0.34), transparent 70%),
+      radial-gradient(900px 520px at 104% 4%, hsl(166 70% 34% / 0.22), transparent 70%), hsl(222 34% 6%);
+  }
+
+  :root[data-theme='iasd-claro'] {
+    --background: 210 40% 96%;
+    --foreground: 222 30% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 30% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 30% 14%;
+    --muted: 214 28% 92%;
+    --muted-foreground: 218 14% 40%;
+    --border: 214 20% 85%;
+    --input: 0 0% 100%;
+    --secondary: 214 24% 90%;
+    --secondary-foreground: 222 30% 18%;
+    --accent: 214 28% 92%;
+    --accent-foreground: 222 30% 14%;
+    --glass: 0 0% 100%;
+    --glass-alpha: 0.78;
+    --glass-border: 222 30% 14% / 0.1;
+    --app-bg: radial-gradient(1000px 560px at 6% -12%, hsl(210 90% 70% / 0.4), transparent 70%),
+      radial-gradient(800px 500px at 104% 0%, hsl(160 70% 60% / 0.3), transparent 70%), hsl(210 40% 96%);
+  }
+
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--app-bg);
+    font-family: var(--font-ui), var(--font-emoji);
+    font-size: 14px;
+    overflow: hidden;
+    user-select: none;
+  }
+  input,
+  textarea {
+    user-select: text;
+  }
+  /* emojis sempre coloridos (padrão do Windows), em qualquer lugar do programa */
+  input,
+  textarea,
+  button,
+  select {
+    font-family: var(--font-ui), var(--font-emoji);
+  }
+  ::selection {
+    background: hsl(var(--primary) / 0.35);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.28);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  .drag {
+    -webkit-app-region: drag;
+  }
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }
+  /* superfície de vidro */
+  .glass {
+    background: hsl(var(--glass) / var(--glass-alpha));
+    border: 1px solid hsl(var(--glass-border));
+    backdrop-filter: blur(var(--blur)) saturate(1.3);
+    -webkit-backdrop-filter: blur(var(--blur)) saturate(1.3);
+  }
+  .bg-brand {
+    background-image: linear-gradient(135deg, hsl(var(--grad-from)), hsl(var(--grad-to)));
+  }
+  .text-brand {
+    background-image: linear-gradient(135deg, hsl(var(--grad-from)), hsl(var(--grad-to)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .field {
+    @apply h-11 w-full rounded-xl border bg-input px-3.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/25;
+  }
+}
+
+/* ---- Modo Leve (PCs fracos): sem blur, sem animações, sem sombras pesadas ---- */
+html.light-mode *,
+html.light-mode *::before,
+html.light-mode *::after {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+html.light-mode .glass {
+  background: hsl(var(--card));
+}
+html.light-mode body {
+  background: hsl(var(--background));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

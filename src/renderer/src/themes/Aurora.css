@@ -1,0 +1,18 @@
+/* Tema "Aurora" — verde-azul e rosa suave (estilo aurora boreal). */
+:root:root:root {
+  --background: 200 30% 6%;
+  --card: 200 25% 10%;
+  --popover: 200 28% 9%;
+  --muted: 200 18% 15%;
+  --secondary: 200 16% 18%;
+  --accent: 200 20% 16%;
+  --border: 200 15% 20%;
+  --input: 200 30% 7%;
+  --primary: 170 80% 50%;
+  --ring: 170 85% 55%;
+  --grad-from: 160 90% 48%;
+  --grad-to: 320 70% 55%;
+  --glass: 200 22% 12%;
+  --app-bg: radial-gradient(1100px 620px at 8% -12%, hsl(160 80% 40% / 0.35), transparent 70%),
+    radial-gradient(900px 520px at 104% 4%, hsl(320 60% 40% / 0.28), transparent 70%), hsl(200 35% 4%);
+}
